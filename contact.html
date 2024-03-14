@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <link href="./footer.css" rel="stylesheet" />
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+  <title>Contact Us</title>
+  <link href="./header.css" rel="stylesheet" />
+  <link href="./contact.css" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="headers">
+    <li class="neonText"><a href="/index.html">AeroNex</a></li>
+    <ul class="headerlist">
+        <li><input class="searchinput " /></li>
+        <li> <img class="search" width="30" height="30" src="./images/search1 (1).png" /></li>
+        <li class="active"><a href="/index.html">Home</a></li>
+        <li class="active">
+            <a href="/Innovation.html">Innovation</a>
+        </li>
+
+        <li class="active">
+            <a href="/product.html">Product</a>
+        </li>
+        <li class="active">
+            <a href="/about.html">About us </a>
+        </li>
+        <li class="active">
+            <a href="/contact.html">Contact</a>
+        </li>
+    </ul>
+
+</header>
+  <div class="background-container">
+    <section class="contact-info-section">
+      <div class="contact-image">
+        <img src="./images/shutterstock_1943915647-450x340.webp" alt="AeroNex Contact Image">
+      </div>
+      <div class="contact-text">
+        <h2>Welcome to AeroNex</h2>
+        <p>At AeroNex, we are dedicated to pushing the boundaries of innovation in the field of AeroNex technology. Our team of experts is committed to delivering cutting-edge solutions that propel the industry forward.</p>
+        <p>Whether you have questions about our products, want to explore collaboration opportunities, or simply need assistance, feel free to get in touch with us. We're here to provide you with the information and support you need.</p>
+      </div>
+    </section>
+    
+    <section class="contact-form-and-get-in-touch">
+      
+      <div class="get-in-touch-section">
+        <h2>Get in Touch with us</h2>
+        <ul class="getintouch" id="getintouch">
+          
+        </ul>
+      </div>
+      <div class="contact-form-wrapper">
+        <h2>If You Have Any Query, Feel Free To Contact Us</h2>
+        <form action="#" method="post" class="contact-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="username" name="username" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+          </div>
+
+         <div class="btn">
+          <button class="btns"  type="submit" onclick="SubmitInfo()">Submit</button>
+         </div>
+        </form>
+      </div>
+
+     
+    </section>
+
+  
+    <div id="map"></div>
+    <section class="footer-container">
+      <div class="footer">
+          <ul>
+              <h2>ADDRESS</h2>
+              <li><i class="fa-solid fa-location-dot"></i> 123 Street, New York, USA</li>
+              <li><i class="fa-solid fa-phone-volume"></i> +012 345 67890</li>
+              <li><i class="fa-regular fa-envelope"></i> info@example.com</li>
+          </ul>
+          <ul>
+              <h2>SERVICES</h2>
+              <li>Aircraft Maintenance and Repair</li>
+              <li>Avionics and Electronics Installation</li>
+              <li>Aerospace Engineering and Design</li>
+          </ul>
+          <ul>
+              <h2>QUICK LINKS</h2>
+              <li>About us</li>
+              <li>Contact us</li>
+              <li>Our Service</li>
+              <li>Terms & Conditions</li>
+              <li>Support</li>
+          </ul>
+
+      </div>
+      <hr>
+      <div class="footr">
+          <p>© AeroNex, All Right Reserved.</p>
+          <p>Designed By Hema V Mane</p>
+
+      </div>
+  </section>
+  </div>
+
+  <script src="./contact.js">
+   
+  </script>
+</body>
+
+</html>

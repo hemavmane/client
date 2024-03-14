@@ -1,0 +1,92 @@
+.headers {
+    background-color: black;
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    z-index: 2;
+    opacity: 4;
+}
+
+.headerlist {
+    display: flex;
+}
+
+li {
+    color: white;
+    list-style: none;
+    padding: 15px;
+}
+
+li a {
+    text-decoration: none !important;
+    color: white !important;
+}
+
+.headerlist li.active:hover {
+    border-bottom: 2px solid white;
+}
+
+.searchinput {
+    display: none;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.199);
+    border: none;
+    width: 0;
+    transition: width 0.3s ease-in-out;
+    color: white;
+}
+
+.search {
+    cursor: pointer;
+}
+
+.expanded {
+    width: 250px;
+    padding: 5px;
+    display: block;
+    transition: width 0.3s ease-in-out;
+}
+
+@keyframes flicker {
+
+    0%,
+    18%,
+    22%,
+    25%,
+    53%,
+    57%,
+    100% {
+
+        text-shadow:
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff,
+            0 0 40px #0fa,
+            0 0 80px #0fa,
+            0 0 90px #0fa,
+            0 0 100px #0fa,
+            0 0 150px #0fa;
+
+    }
+
+    20%,
+    24%,
+    55% {
+        text-shadow: none;
+    }
+
+
+
+}
+
+.neonText {
+    animation: flicker 1.5s infinite alternate;
+    color: #fff;
+    font-family: "Anta", sans-serif;
+    background: transparent;
+}

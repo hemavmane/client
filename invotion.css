@@ -1,0 +1,116 @@
+/* FontAwesome Icons */
+.fa-location-dot:before {
+    content: "\f041"; /* Location Dot Icon */
+}
+
+.fa-phone-volume:before {
+    content: "\f095"; /* Phone Volume Icon */
+}
+
+.fa-envelope:before {
+    content: "\f0e0"; /* Envelope Icon */
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.logo {
+    margin: 0;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Hero Section Styles */
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-title {
+    margin-top: 0;
+    font-size: 48px;
+}
+
+.hero-text {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Innovation Section Styles */
+.innovation {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-title {
+    margin-bottom: 40px;
+    font-size: 36px;
+}
+
+.innovation-cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    flex: 1;
+    margin: 0 10px;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card-title {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card-text {
+    font-size: 16px;
+}
